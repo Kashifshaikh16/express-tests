@@ -25,6 +25,7 @@ user.post("/", (req, res) => {
     users.push(newUser);
 
     res.status(201).send(newUser);
+    res.send("hello world!")
 });
 
 
