@@ -13,7 +13,9 @@ app.use(express.json());
 
 let teaData = [];
 let nextId = 1;
-
+app.get("/home",(req,res)=>{
+    res.send("hello world!")
+})
 
 // Add a new tea
 app.post("/teas", (req, res) => {
